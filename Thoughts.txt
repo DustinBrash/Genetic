@@ -1,0 +1,17 @@
+POKEMON: type A: type B: move A: move B: move C: move D: 
+	 hp: atk: def: spatk: spdef: speed: evaision:
+	 accuracy: special positioning = 
+	 11 * 6 + 6 * 2 + 11 * 4 + 9 * 2 bits
+MOVE: type A: category: pp: damage: accuracy: conditions: 
+      positive or negative: attribute affected: 
+      stage number: crit ratio: conditional modifiers (i.e. twister v. Flying opponent)
+
+dicts: types, moves
+
+each string fills the empty space with 0's, i.e. 1011 = 001011 (to create a fixed size bitstring)
+
+methods: battle(simulates a 2 out of 3 contest between two pokemon)
+	 move(uses a move)
+	 queue(queues x moves)
+	 mutate(can change type(s), stats, move(s))
+	 
